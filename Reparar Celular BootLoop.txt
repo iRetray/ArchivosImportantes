@@ -1,0 +1,20 @@
+Equipo en BootLoop
+
+Instalar ADB Fastboot y abrir en la terminal de cmd
+Entrar en modo fastboot
+
+Solucion 1:
+
+Eliminar la cache por si esta generando problemas
+fastboot devices
+	codigoHexadecimal	fastboot
+fastboot erase cache
+fastboot reboot
+
+Solucion 2:
+
+Reiniciar el sistema a estado de fabrica
+fastboot devices
+	codigoHexadecimal	fastboot
+fastboot erase userdata
+fastboot reboot
